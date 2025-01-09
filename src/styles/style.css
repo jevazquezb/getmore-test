@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  /* background-color: #f6ebf4; */
+  color: #482673;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.swiper-wrapper {
+  height: 200px;
+}
+
+.swiper-pagination-bullet {
+  background: #ebebeb;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #cbe346;
+}
