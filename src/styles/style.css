@@ -113,10 +113,14 @@ header h3 {
 }
 /* Hero Section: End */
 
-/* Accesories Section: Beginning */
+/* Accessories Section: Beginning */
 #accessories-section {
   background-color: #f3f4f8;
   padding: 72px 10% 67px;
+}
+
+.accessories-cont {
+  max-width: 300px;
 }
 
 .accessories-subtitle {
@@ -129,12 +133,12 @@ header h3 {
   margin-bottom: 10px;
 }
 
-.accesories-txt-cont {
+.accessories-txt-cont {
   margin-bottom: 20px;
 }
 
 .accessories-title {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 1.14;
   letter-spacing: -0.06px;
   color: #1e2335;
@@ -156,14 +160,14 @@ header h3 {
   text-decoration: none;
   color: #273048;
   font-size: 9px;
-  line-height: 2.15;
+  line-height: 1.62;
   letter-spacing: 1.01px;
   display: flex; 
   justify-content: space-between;
   align-items: center;
   width: 120px;
 }
-/* Accesories Section: End */
+/* Accessories Section: End */
 
 /* Rackets Section: Beginning */
 #rackets-section {
@@ -331,7 +335,38 @@ header h3 {
 }
 /* Footer Section: End */
 
+@media screen and (min-width: 360px) {
+  /* Accessories Section: Beginning - 360px */
+  .accessories-title {
+    font-size: 30px;
+  }
+
+  /* Accessories Section: End - 360px */
+
+}
+
 @media screen and (min-width: 576px) {
+  /* Accessories Section: Beginning - 576px */
+  .accessories-cont {
+    max-width: 390px;
+  }
+
+  .accessories-subtitle {
+    font-size: 13px;
+  }
+
+  .accessories-title {
+    font-size: 40px;
+  }
+
+  .accessories-p {
+    font-size: 15px;
+  }
+
+  .secondary-btn {
+    font-size: 11px;
+  }
+  /* Accessories Section: End - 576px */
 
 }
 
@@ -411,6 +446,31 @@ header h3 {
   }
   /* Hero Section: End - 768px */
 
+  /* Accessories Section: Beginning - 768px */
+  .accessories-subtitle {
+    margin-top: 10px;
+  }
+
+  .accessories-cont {
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    gap: 51px;
+  }
+
+  .accessories-txt-cont {
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+
+  .secondary-btn {
+    align-self: flex-end;
+  }
+
+  .secondary-btn > span {
+    margin-right: 10px;
+  }  
+  /* Accessories Section: End - 768px */
 }
 
 @media screen and (min-width: 992px) {
@@ -451,11 +511,45 @@ header h3 {
   }
 
   /* Hero Section: End - 992px */
+
+  /* Accessories Section: Beginning - 992px */
+  #accessories-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .accessories-subtitle {
+    font-size: 15px;
+    margin-top: 13px;
+  }
+
+  .accessories-txt-cont {
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .accessories-title {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  .accessories-p {
+    font-size: 18px;
+    max-width: 80%;
+  }
+
+  .secondary-btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+    width: 156px;
+  } 
+  /* Accessories Section: End - 992px */
   
 }
 
 @media screen and (min-width: 1200px) {
-  /* Hero Section: Beginning - 992px */
+  /* Hero Section: Beginning - 1200px */
   #hero-section h1 {
     margin-bottom: 50px;
   }
@@ -468,4 +562,11 @@ header h3 {
     margin-top: 144px;
   }
   /* Hero Section: End - 1200px */
+
+  /* Accessories Section: Beginning - 1200px */
+  .accessories-cont {
+    justify-content: flex-end;
+    padding-right: 168px;
+  }
+  /* Accessories Section: End - 1200px */
 }
