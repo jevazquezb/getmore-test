@@ -313,7 +313,6 @@ header h3 {
 }
 
 .footer-logo {
-  /* align-self: flex-end; */
   width: 35px;
   position: absolute;
   top: 40px;
@@ -499,6 +498,24 @@ header h3 {
     margin-right: 10px;
   }  
   /* Accessories Section: End - 768px */
+
+  /* Footer Section: Beginning - 768px */
+  #footer-section {
+    align-items: flex-start;
+    padding-left: 78px;
+    gap: 23px;
+  }
+
+  .footer-link-list {
+    flex-direction: row;
+    gap: 45px
+  }
+
+  .footer-logo {
+    top: 45px;
+    right: 63px;
+  }
+  /* Footer Section: End - 768px */
 }
 
 @media screen and (min-width: 992px) {
@@ -621,7 +638,18 @@ header h3 {
     .court-img {
       height: 586px;
     }
-  /* Court Section: End - 992px */  
+  /* Court Section: End - 992px */
+
+  /* Footer Section: Beginning - 992px */
+  #footer-section {
+    padding-top: 64px;
+  }
+
+  .footer-logo {
+    top: 65px;
+    width: 55px;
+  }
+  /* Footer Section: End - 992px */
 }
 
 @media screen and (min-width: 1200px) {
