@@ -40,3 +40,32 @@ function hideMenu(item) {
 menuBtn.addEventListener('click', displayMenu);
 mobileMenuChildren.forEach(hideMenu);
 
+// Active elements
+function addActiveClass(domElement, activeClassName) {
+  if (domElement) {
+    const currentActive = document.querySelector(`.${activeClassName}`);
+    currentActive.classList.remove(activeClassName);
+    domElement.classList.add(activeClassName);
+  }
+}
+
+function makeMenuLinkActive(link) {
+  link.addEventListener('click', () => {
+    addActiveClass(link, 'desktop-menu-link-active');
+
+    const underlinedLink = link.querySelector('.desktop-menu-link-line');
+    addActiveClass(underlinedLink, 'desktop-menu-link-line-active');
+  });
+}
+
+function makeLocaleActive(locale) {
+  locale.addEventListener('click', () => {
+    addActiveClass(locale, 'locale-btn-active');
+  });
+}
+
+const desktopMenuLinks = document.querySelectorAll('.desktop-menu-link');
+desktopMenuLinks.forEach(makeMenuLinkActive);
+
+const locales = document.querySelectorAll('.locale-btn');
+locales.forEach(makeLocaleActive);
