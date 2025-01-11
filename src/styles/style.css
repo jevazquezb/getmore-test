@@ -2,6 +2,7 @@
   --white: #ffffff;
   --sickly-yellow: #cbe346;
   --dark: #2b3049;
+  --ball-court-img-padding-top: 55px;
 
 }
 
@@ -182,18 +183,19 @@ header h3 {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 38px;
+  padding-top: var(--ball-court-img-padding-top);
   display: flex;
   justify-content: flex-end;
 }
 
 .rackets-txt {
   width: 50%;
+  max-width: 200px;
   padding-right: 10%;
 }
 
 .slider-cont {
-  padding-top: 388px;
+  padding-top: 339px;
 }
 
 .rackets-title {
@@ -215,13 +217,15 @@ header h3 {
   color: var(--white);
 }
 
+.desktop-racket-pag {
+  display: none;
+}
+
 .slider-arrows-cont {
-  display: flex;
-  gap: 19px;
+  display: none;
 }
 
 .racket-wrapper {
-  margin-bottom: 35px;
   width: 288px;
 }
 
@@ -272,6 +276,11 @@ header h3 {
   font-size: 1rem;
 }
 
+.swiper-pagination {
+  position: relative;
+  text-align: left;
+}
+
 .swiper-pagination-bullet {
   background: #ebebeb;
   opacity: 1;
@@ -279,6 +288,10 @@ header h3 {
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--sickly-yellow);
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-right: 22px;
 }
 /* Rackets Section: End */
 
@@ -367,6 +380,21 @@ header h3 {
     font-size: 11px;
   }
   /* Accessories Section: End - 576px */
+
+  /* Rackets Section: Beginning - 576px */
+  .rackets-txt {
+    max-width: 260px;
+  }
+
+  .rackets-title {
+    font-size: 40px;
+  }
+
+  .rackets-p {
+    font-size: 15px;
+  }
+
+  /* Rackets Section: End - 576px */
 
 }
 
@@ -545,7 +573,49 @@ header h3 {
     width: 156px;
   } 
   /* Accessories Section: End - 992px */
-  
+
+  /* Rackets Section: Beginning - 992px */
+  #rackets-section {
+    padding: 0;
+  }
+
+  .ball-court-img {
+    width: 530px;
+    height: calc(100% - var(--ball-court-img-padding-top));
+  }
+
+  .rackets-txt {
+    max-width: none;
+    padding-right: 45px;
+    width: 55%;
+  }
+
+  .rackets-title {
+    font-size: 50px;
+    margin-bottom: 13px;
+  }
+
+  .rackets-p {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .desktop-racket-pag {
+    display: block;
+  }
+
+  .slider-arrows-cont {
+    display: flex;
+    gap: 19px;
+    margin-top: 25px;
+  }
+
+  .slider-cont {
+    padding: 0;
+    margin-left: 530px;
+    padding: 51px 52px 73px 52px;
+  }
+  /* Rackets Section: end - 992px */
 }
 
 @media screen and (min-width: 1200px) {
