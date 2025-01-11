@@ -11,6 +11,7 @@
     <!-- Hero Section -->
     <section id="hero-section" class="hero-img">
       <div class="vertical-line"></div>
+
       <!-- Header section -->
       <header>
         <a class="center-items home-link-header" href="./">
@@ -18,11 +19,42 @@
           <!-- Mobile title -->
           <h3>TENNIS</h3>          
         </a>
+
         <!-- Mobile menu icons -->
-        <div class="menus-cont-mobile">
-          <img class="header-icons-size" src="./assests/images/hamburger-menu.svg" alt="Hamburger Menu" title="Menu">
-          <img class="header-icons-size" src="./assests/images/world-icon.png" alt="Language Menu" title="Locale Menu">
+        <ul class="menus-cont-mobile">
+          <li>
+            <a id="hamburger-menu" class="mobile-menu-btn" href="#">
+              <img class="header-icons-size" src="./assests/images/hamburger-menu.svg" alt="Hamburger Menu" title="Menu">
+            </a>
+          </li>
+          <li>
+            <a class="mobile-menu-btn" href="#">
+              <img class="header-icons-size" src="./assests/images/world-icon.png" alt="Language Menu" title="Locale Menu">
+            </a>
+          </li>          
+        </ul>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <button class="remove-style-btn close-menu-btn">
+            <img class="close-icon" src="./assests/images/close-icon.svg" alt="Close icon" title="Close menu">
+          </button>
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">Inicio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">Acerca de nosotros</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">Historia</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="#">Contacto</a>
+            </li> 
+          </ul>
         </div>
+        
         <!-- Desktop menu -->
         <nav class="desktop-menu-cont">
           <a class="desktop-menu-link desktop-menu-link-active" href="#">
@@ -40,15 +72,21 @@
           <a class="desktop-menu-link" href="#">
             <span>Contacto</span>
             <div class="desktop-menu-link-line"></div>
-          </a>
-          
+          </a>          
         </nav>
-        <ul class="locale-cont">
-          <li class="locale-item locale-item-active">ES</li>
-          <li class="locale-item">EN</li>
-        </ul>
 
+        <!-- Desktop locale menu -->
+        <ul class="locale-cont">
+          <li>
+            <button class="remove-style-btn locale-btn locale-btn-active">ES</button>            
+          </li>
+          <li>
+            <button class="remove-style-btn locale-btn">EN</button>         
+          </li>
+        </ul>
       </header>
+
+      <!-- Hero section body -->
       <div class="main-title-cont">
         <h1>
           Las mejores raquetas para jugar <span>Tennis</span>          
@@ -78,18 +116,19 @@
 
       <!-- Rackets Section -->
       <section id="rackets-section">
-        <!-- <h2 class="accessories-title rackets-title">Nuestras Raquetas.</h2> -->
          <div class="ball-court-img">
           <div class="rackets-txt">
             <h2 class="rackets-title">Nuestras <span>Raquetas</span></h2>
             <p class="rackets-p">Conoce nuestras raquetas y aprende a jugar Tennis como un profesional.</p>
-            <!-- Pagination Desktop -->
+
+            <!-- Pagination -->
             <div class="swiper-pagination desktop-racket-pag"></div>
+
+            <!-- Navigation buttons -->
             <div class="slider-arrows-cont">
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>             
-            </div>
-            
+            </div>            
           </div>
          </div>
         <div class="slider-cont swiper">
@@ -163,15 +202,10 @@
             <img class="social-media-icon" src="./assests/images/facebook-icon.svg" alt="Facebook icon" title="Facebook">
           </a>
         </li>
-      </ul>
-      
-    </footer>
-
-
-
-      
-    
+      </ul>      
+    </footer>    
   </body>
+
   <!-- Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </html>
