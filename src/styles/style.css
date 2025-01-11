@@ -75,6 +75,40 @@ body {
 }
 /* Mobile menu: End */
 
+/* Mobile locale menu: Beginning */
+.mobile-locale-wrapper {
+  position: relative;  
+}
+
+.mobile-locale-cont {
+  opacity: 0;
+  position: absolute;
+  top: 110%;
+  right: 100%;
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 15px;
+  z-index: -5;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.mobile-locale-cont li:hover {
+  cursor: pointer;
+}
+
+.display-mobile-locale-cont {
+  opacity: 1;
+  z-index: 10;
+}
+
+.mobile-locale-btn-active {
+  font-weight: bold;
+}
+
+/* Mobile locale menu: End */
+
 /* Hero Section: Beginning */
 .hero-img {
   width: 100%;
@@ -124,7 +158,8 @@ header h3 {
 
 .header-icons-size {
   width: 30px;
-  height: 30px;  
+  height: 30px;
+  position: relative;
 }
 
 .menus-cont-mobile {

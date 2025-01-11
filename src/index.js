@@ -40,6 +40,29 @@ function hideMenu(item) {
 menuBtn.addEventListener('click', displayMenu);
 mobileMenuChildren.forEach(hideMenu);
 
+// Mobile locale menu
+const mobileLocaleBtn = document.querySelector('#mobile-locale-btn');
+const mobileLocaleMenu = document.querySelector('.mobile-locale-cont');
+
+function displayLocaleMenu() {
+  mobileLocaleMenu.classList.toggle('display-mobile-locale-cont');
+}
+
+mobileLocaleBtn.addEventListener('click', displayLocaleMenu);
+
+// Close locale menu when clicking outside of it
+function closeLocaleMenu(e) {
+  if (
+    !e.target.parentElement.matches('#mobile-locale-btn')
+    &&
+    mobileLocaleMenu.classList.contains('display-mobile-locale-cont')
+  ) {
+    mobileLocaleMenu.classList.remove('display-mobile-locale-cont');
+  }
+}
+
+window.addEventListener('click', closeLocaleMenu);
+
 // Active elements
 function addActiveClass(domElement, activeClassName) {
   if (domElement) {
@@ -58,9 +81,11 @@ function makeMenuLinkActive(link) {
   });
 }
 
-function makeLocaleActive(locale) {
-  locale.addEventListener('click', () => {
-    addActiveClass(locale, 'locale-btn-active');
+function makeActive (list, className) {
+  list.forEach(domElement => {
+    domElement.addEventListener('click', () => {
+      addActiveClass(domElement, className);
+    });
   });
 }
 
@@ -68,4 +93,9 @@ const desktopMenuLinks = document.querySelectorAll('.desktop-menu-link');
 desktopMenuLinks.forEach(makeMenuLinkActive);
 
 const locales = document.querySelectorAll('.locale-btn');
-locales.forEach(makeLocaleActive);
+makeActive(locales, 'locale-btn-active');
+
+const mobileLocales = document.querySelectorAll('.mobile-locale-cont li');
+makeActive(mobileLocales, 'mobile-locale-btn-active');
+
+
