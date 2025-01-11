@@ -464,8 +464,11 @@ header h3 {
   .locale-cont {
     display: flex;
     gap: 20px;
-    margin-left: auto;
-    margin-top: 24px;
+    margin: 24px 0 10px auto;
+  }
+
+  .locale-item:hover {
+    cursor: pointer;
   }
 
   .locale-item-active {

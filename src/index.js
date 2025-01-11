@@ -7,6 +7,7 @@ new Swiper('.racket-wrapper', {
   spaceBetween: 36,
   width: 288,
   centeredSlides: true,
+  grabCursor: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
