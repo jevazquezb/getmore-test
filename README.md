@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Tennis store
 
-# Leaderboard
-
-> In this project, we built the leaderboard website which displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
+> This web mockup showcases a tennis store, featuring both mobile and desktop versions. It includes a dynamic menu for the mobile version and a slider to display products.
 
 ## Built With
 
@@ -24,8 +22,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-    1. git@github.com:jevazquezb/Leaderboard.git
-    2. cd Leaderboard
+    1. git clone https://github.com/jevazquezb/getmore-test.git
+    2. cd getmore-test
 
 ### Install
 
@@ -35,23 +33,30 @@ To get a local copy up and running follow these simple example steps.
 
     npm start
 
+**Note**: If you edit, don't forget to build: ```npx webpack build```.
+
 ### Done!
 
-Ready to work?⛏️ You're all set to explore and change the repo locally (on your computer).
+Ready to work?⛏️ You're all set to explore and change the repo locally.
 
 ## Author
 
 👤 **Jesús Vázquez**
 
 - GitHub: [@jevazquezb](https://github.com/jevazquezb)
-- Twitter: [@javb_1187](https://twitter.com/javb_1187)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jevazquezb)
+
+## 🤝 Future improvements.
+
+- Add an overlay to the mobile menu.
+- Improve the styling of mobile menus.
+- Add locale files.
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/jevazquezb/Leaderboard/issues).
+Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -59,9 +64,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Google!!!
-- Inspiration.
-- etc.
+- Getmore for providing the design.
 
 ## 📝 License
 
