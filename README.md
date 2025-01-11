@@ -46,6 +46,12 @@ Ready to work?⛏️ You're all set to explore and change the repo locally.
 - GitHub: [@jevazquezb](https://github.com/jevazquezb)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jevazquezb)
 
+## 🤝 Future improvements.
+
+- Add an overlay to the mobile menu.
+- Improve the styling of mobile menus.
+- Add locale files.
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
