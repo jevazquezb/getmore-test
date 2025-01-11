@@ -169,7 +169,8 @@ header h3 {
 
 .mobile-menu-btn {
   display: block;
-  height: 30px;
+  height: 29px;
+  width: 29px;
 }
 
 .desktop-menu-cont {

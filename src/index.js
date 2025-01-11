@@ -1,6 +1,7 @@
 import './styles/reset.css';
 import './styles/style.css';
 
+// Slider with Swiper
 // eslint-disable-next-line no-new, no-undef
 new Swiper('.racket-wrapper', {
   loop: false,
@@ -22,23 +23,33 @@ new Swiper('.racket-wrapper', {
 // Mobile menu
 const menuBtn = document.querySelector('#hamburger-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
-const mobileMenuChildren = document.querySelectorAll('.mobile-menu *');
 const body = document.querySelector('body');
 
+// Open mobile menu
 function displayMenu() {
   mobileMenu.classList.add('menu-open');
   body.style.overflow = 'hidden';
 }
 
-function hideMenu(item) {
-  item.addEventListener('click', () => {
+menuBtn.addEventListener('click', displayMenu);
+
+// Close mobile menu
+function closeMobileMenu(e) {
+  if (
+    e.target.parentElement
+    &&
+    !e.target.parentElement.matches('#hamburger-menu')
+    &&
+    mobileMenu.classList.contains('menu-open')
+    &&
+    !e.target.matches('.mobile-menu')
+  ) {
     mobileMenu.classList.remove('menu-open');
     body.style.overflow = 'auto';
-  });
+  }
 }
 
-menuBtn.addEventListener('click', displayMenu);
-mobileMenuChildren.forEach(hideMenu);
+window.addEventListener('click', closeMobileMenu);
 
 // Mobile locale menu
 const mobileLocaleBtn = document.querySelector('#mobile-locale-btn');
@@ -53,6 +64,8 @@ mobileLocaleBtn.addEventListener('click', displayLocaleMenu);
 // Close locale menu when clicking outside of it
 function closeLocaleMenu(e) {
   if (
+    e.target.parentElement
+    &&
     !e.target.parentElement.matches('#mobile-locale-btn')
     &&
     mobileLocaleMenu.classList.contains('display-mobile-locale-cont')
