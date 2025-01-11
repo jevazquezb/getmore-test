@@ -616,6 +616,12 @@ header h3 {
     padding: 51px 52px 73px 52px;
   }
   /* Rackets Section: end - 992px */
+
+  /* Court Section: Beginning - 992px */
+    .court-img {
+      height: 586px;
+    }
+  /* Court Section: End - 992px */  
 }
 
 @media screen and (min-width: 1200px) {
