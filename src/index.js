@@ -17,7 +17,7 @@ new Swiper('.racket-wrapper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  }
+  },
 });
 
 // Mobile menu
@@ -37,12 +37,9 @@ menuBtn.addEventListener('click', displayMenu);
 function closeMobileMenu(e) {
   if (
     e.target.parentElement
-    &&
-    !e.target.parentElement.matches('#hamburger-menu')
-    &&
-    mobileMenu.classList.contains('menu-open')
-    &&
-    !e.target.matches('.mobile-menu')
+    && !e.target.parentElement.matches('#hamburger-menu')
+    && mobileMenu.classList.contains('menu-open')
+    && !e.target.matches('.mobile-menu')
   ) {
     mobileMenu.classList.remove('menu-open');
     body.style.overflow = 'auto';
@@ -65,10 +62,8 @@ mobileLocaleBtn.addEventListener('click', displayLocaleMenu);
 function closeLocaleMenu(e) {
   if (
     e.target.parentElement
-    &&
-    !e.target.parentElement.matches('#mobile-locale-btn')
-    &&
-    mobileLocaleMenu.classList.contains('display-mobile-locale-cont')
+    && !e.target.parentElement.matches('#mobile-locale-btn')
+    && mobileLocaleMenu.classList.contains('display-mobile-locale-cont')
   ) {
     mobileLocaleMenu.classList.remove('display-mobile-locale-cont');
   }
@@ -94,8 +89,8 @@ function makeMenuLinkActive(link) {
   });
 }
 
-function makeActive (list, className) {
-  list.forEach(domElement => {
+function makeActive(list, className) {
+  list.forEach((domElement) => {
     domElement.addEventListener('click', () => {
       addActiveClass(domElement, className);
     });
@@ -110,5 +105,3 @@ makeActive(locales, 'locale-btn-active');
 
 const mobileLocales = document.querySelectorAll('.mobile-locale-cont li');
 makeActive(mobileLocales, 'mobile-locale-btn-active');
-
-

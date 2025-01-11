@@ -1,5 +1,5 @@
 :root {
-  --white: #ffffff;
+  --white: #fff;
   --sickly-yellow: #cbe346;
   --dark: #2b3049;
   --ball-court-img-padding-top: 55px;
@@ -21,6 +21,7 @@ body {
   border: none;
   padding: 0;
 }
+
 /* Auxiliary classes: End */
 
 /* Mobile menu: Beginning */
@@ -61,29 +62,30 @@ body {
 }
 
 .mobile-menu-list {
-  border-top: 1px solid #ACACAC;
+  border-top: 1px solid #acacac;
 }
 
 .mobile-menu-link {
-  color: var(--dark);  
+  color: var(--dark);
   text-decoration: none;
   display: block;
-  border-bottom: 1px solid #ACACAC;
+  border-bottom: 1px solid #acacac;
   padding: 15px 20px;
   font-weight: bold;
-  font-size: 19px;  
+  font-size: 19px;
 }
+
 /* Mobile menu: End */
 
 /* Mobile locale menu: Beginning */
 .mobile-locale-wrapper {
-  position: relative;  
+  position: relative;
 }
 
 .mobile-locale-cont {
   opacity: 0;
   position: absolute;
-  top: 110%;
+  top: 120%;
   right: 100%;
   background-color: var(--white);
   color: var(--dark);
@@ -113,7 +115,7 @@ body {
 .hero-img {
   width: 100%;
   height: 350px;
-  background: no-repeat center top/cover url("../assests/images/hero-medium.jpg");  
+  background: no-repeat center top/cover url("../assests/images/hero-medium.jpg");
 }
 
 .vertical-line {
@@ -199,10 +201,10 @@ header h3 {
   color: var(--white);
   font-size: 9px;
   line-height: 2.15;
-  letter-spacing: 1.01px;  
+  letter-spacing: 1.01px;
 }
 
-.primary-btn > span {
+.primary-btn-span {
   margin-right: 2px;
 }
 
@@ -210,6 +212,7 @@ header h3 {
   width: 16px;
   vertical-align: middle;
 }
+
 /* Hero Section: End */
 
 /* Accessories Section: Beginning */
@@ -261,11 +264,12 @@ header h3 {
   font-size: 9px;
   line-height: 1.62;
   letter-spacing: 1.01px;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 120px;
 }
+
 /* Accessories Section: End */
 
 /* Rackets Section: Beginning */
@@ -304,7 +308,7 @@ header h3 {
   margin-bottom: 20px;
 }
 
-.rackets-title > span {
+.rackets-title-span {
   font-weight: bold;
 }
 
@@ -358,10 +362,9 @@ header h3 {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  border: none;
   background-color: var(--sickly-yellow);
   border: 1px solid var(--sickly-yellow);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
 }
 
 .swiper-button-prev::after {
@@ -391,6 +394,7 @@ header h3 {
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 22px;
 }
+
 /* Rackets Section: End */
 
 /* Court Section: Beginning */
@@ -399,6 +403,7 @@ header h3 {
   height: 350px;
   background: no-repeat left center/cover url("../assests/images/court-small.jpg");
 }
+
 /* Court Section: End */
 
 /* Footer Section: Beginning */
@@ -443,6 +448,7 @@ header h3 {
   width: 31px;
   height: 31px;
 }
+
 /* Footer Section: End */
 
 @media screen and (min-width: 360px) {
@@ -452,7 +458,6 @@ header h3 {
   }
 
   /* Accessories Section: End - 360px */
-
 }
 
 @media screen and (min-width: 576px) {
@@ -462,8 +467,9 @@ header h3 {
   }
 
   .mobile-menu-link {
-    font-size: 24px;  
+    font-size: 24px;
   }
+
   /* Mobile Menu: End - 576px */
 
   /* Accessories Section: Beginning - 576px */
@@ -486,6 +492,7 @@ header h3 {
   .secondary-btn {
     font-size: 11px;
   }
+
   /* Accessories Section: End - 576px */
 
   /* Rackets Section: Beginning - 576px */
@@ -502,7 +509,6 @@ header h3 {
   }
 
   /* Rackets Section: End - 576px */
-
 }
 
 @media screen and (min-width: 768px) {
@@ -588,6 +594,7 @@ header h3 {
   .locale-btn-active {
     font-weight: bold;
   }
+
   /* Hero Section: End - 768px */
 
   /* Accessories Section: Beginning - 768px */
@@ -613,7 +620,8 @@ header h3 {
 
   .secondary-btn > span {
     margin-right: 10px;
-  }  
+  }
+
   /* Accessories Section: End - 768px */
 
   /* Footer Section: Beginning - 768px */
@@ -625,13 +633,14 @@ header h3 {
 
   .footer-link-list {
     flex-direction: row;
-    gap: 45px
+    gap: 45px;
   }
 
   .footer-logo {
     top: 45px;
     right: 63px;
   }
+
   /* Footer Section: End - 768px */
 }
 
@@ -665,7 +674,7 @@ header h3 {
   }
 
   .primary-btn {
-    font-size: 13px; 
+    font-size: 13px;
   }
 
   .right-arrow {
@@ -705,7 +714,8 @@ header h3 {
     padding-bottom: 15px;
     font-size: 13px;
     width: 156px;
-  } 
+  }
+
   /* Accessories Section: End - 992px */
 
   /* Rackets Section: Beginning - 992px */
@@ -745,16 +755,17 @@ header h3 {
   }
 
   .slider-cont {
-    padding: 0;
     margin-left: 530px;
     padding: 51px 52px 73px 52px;
   }
+
   /* Rackets Section: end - 992px */
 
   /* Court Section: Beginning - 992px */
-    .court-img {
-      height: 586px;
-    }
+  .court-img {
+    height: 586px;
+  }
+
   /* Court Section: End - 992px */
 
   /* Footer Section: Beginning - 992px */
@@ -766,6 +777,7 @@ header h3 {
     top: 65px;
     width: 55px;
   }
+
   /* Footer Section: End - 992px */
 }
 
@@ -782,6 +794,7 @@ header h3 {
   .main-title-cont {
     margin-top: 144px;
   }
+
   /* Hero Section: End - 1200px */
 
   /* Accessories Section: Beginning - 1200px */
@@ -789,5 +802,6 @@ header h3 {
     justify-content: flex-end;
     padding-right: 168px;
   }
+
   /* Accessories Section: End - 1200px */
 }
