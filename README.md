@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-(Coming soon.)
+[Tennis store](https://tennis-store-javb.netlify.app/)
 
 ## Getting Started
 
